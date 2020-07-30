@@ -1,0 +1,86 @@
+.game-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .game-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: seashell;
+        .generation-container {
+            width: 48%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            p {
+                width: 20%;
+            }
+        }
+        .speed-container {
+            width: 48%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            p {
+                width: 20%;
+            }
+            button {
+                width: 10%;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .game-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        .grid-container {
+            display: inline-block;
+            position: relative;
+            width: 56%;
+            .gameboy {
+                display: block;
+                width: 340px;
+            }
+            .grid {
+                position: absolute;
+                left: 26%;
+                top: 28%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                padding: 10px;
+            }
+            .cell {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .game-rules {
+            width: 40%;
+            background-color: seashell;
+            .button-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                button {
+                    width: 16%;
+                    padding: 1% 0;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+  
